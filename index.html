@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--是否手机全屏-->
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true" />
+
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="lib-flexible-master/build/flexible.js"></script>
+    <script src="lib-flexible-master/build/flexible_css.js"></script>
+    <!--引用flexible后不用再写该行代码-->
+    <!--<meta name="viewport" content="width=device-width,user-scalable=no">-->
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>musicPhone</title>
+   <!--zepto.js要放在最前面-->
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/event.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript">
+        //alert(document.documentElement.clientHeight);
+        document.body.style.height = document.documentElement.clientHeight + "px";
+    </script>
+    <!--首次进入-->
+    <!--<div class="startwrap">-->
+        <!--<div class="startleft"></div>-->
+        <!--<div class="startright"></div>-->
+    <!--</div>-->
+
+     <!--屏一index-->
+     <div class="indexwrap">
+         <header class="indexheader">
+             <nav class="indexheader_nav clearfix">
+                 <a href="javascript:;" class="indexmenu"></a>
+                 <a href="javascript:;" class="nameM">Music</a>
+                 <a href="javascript:;" class="indexsearch"></a>
+             </nav>
+         </header>
+         <section class="indexsection">
+             <article class="indexsection_art">
+                 <!--移动端对img的支持比对background-iamge的支持更好-->
+                 <img src="img/Coeluso_app-new-beifen_03.jpg" class="indexpicture" >
+                 <ul class="indexsection_ul clearfix">
+                     <li class="indexsection_ul_li1"></li>
+                     <li class="indexsection_ul_li2">
+                         <span class="datalistName"></span>
+                         <span class="datalistPerson"></span>
+                     </li>
+                     <li class="indexsection_ul_li3"></li>
+                 </ul>
+                 <!--歌词显示部分-->
+                 <div class="wrap_citelist">
+                     <ul class="citelist">
+                         <!--<li23></li23>-->
+                         <!--<li>3</li>-->
+                         <!--<li>34</li>-->
+                         <!--<li>434</li>-->
+                         <!--<li>23</li>-->
+                     </ul>
+                 </div>
+
+                 <div class="indexmusic_time clearfix">
+                     <span class="indexpretime">00.00</span>
+                     <span class="indextotaltime">00.00</span>
+                 </div>
+                 <div class="indexprocess">
+                     <div class="indexcurrent_process"></div>
+                 </div>
+             </article>
+             <!--弹窗开始-->
+             <div class="indexl_menu">
+                 <div class="indexl_menu_wrap">
+                     <div class="indexvolum clearfix">
+                         <img src="img/1-0.png" class="indexvolumone">
+                         <div class="indexvolum_process">
+                             <div class="indexcurrentvolum_process"></div>
+                             <div class="indexdot"></div>
+                         </div>
+                         <img  src="img/2-0.png" class="indexvolumtwo">
+                     </div>
+                     <div class="indexnone clearfix">
+                         <div class="indexnonediv2">
+                             <div class="indexone_img"> <img src="img/music.png" class="indexnonemusic"></div>
+                             <span>我的音乐</span>
+                         </div>
+                     </div>
+                     <div class="indexclose"> 关闭</div>
+                </div>
+             </div>
+             <!--弹窗结束-->
+         </section>
+         <footer class="indexcontrol">
+             <ul class="indexcontrol_ul">
+                 <li class="indexcontrol_ul_li1"></li>
+                 <li class="indexcontrol_ul_li2"></li>
+                 <li class="indexcontrol_ul_li3"></li>
+                 <!--<li class="indexcontrol_ul_li3_"></li>-->
+                 <li class="indexcontrol_ul_li4"></li>
+                 <li class="indexcontrol_ul_li5"></li>
+             </ul>
+         </footer>
+     </div>
+   <!--屏二 playlist-->
+     <div class="playlistwrap">
+         <header class="playlistheader">
+             <nav class="playlistheader_nav clearfix">
+                 <a href="javascript:;" class="playlistmenu"></a>
+                 <input type="text"  class="musicsearch" placeholder="音乐名称搜索">
+                 <!--<a href="javascript:;" class="playlist_a"><span>歌曲名字</span><span>歌者名字</span></a>-->
+                 <a href="javascript:;" class="playlistsearch"></a>
+             </nav>
+         </header>
+         <section class="playlistsection">
+             <ul class="playlistsection_ul">
+                 <li class="playlistsection_ul_li1">00.00</li>
+                 <li class="playlistsection_ul_li2"></li>
+                 <li class="playlistsection_ul_li3"></li>
+                 <li class="playlistsection_ul_li4"></li>
+                 <li class="playlistsection_ul_li5"></li>
+                 <li class="playlistsection_ul_li6"></li>
+                 <li class="playlistsection_ul_li7">00.00</li>
+             </ul>
+             <div class="playlistprocess">
+                 <div class="playlistcurrent_process"></div>
+             </div>
+         </section>
+         <footer class="playlistlist">
+             <ul class="playlistlist_ul">
+                 <!--<li class="playlistlist_ul_li1 clearfix">-->
+                     <!--<div>1</div>-->
+                     <!--<div class="playlistlistname">-->
+                         <!--<span class="playlistsongname">歌曲名字</span>-->
+                         <!--<span class="playlistsingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div>22.4</div>-->
+                 <!--</li>-->
+                 <!--<li class="playlistlist_ul_li1 clearfix">-->
+                     <!--<div>1</div>-->
+                     <!--<div class="playlistlistname">-->
+                         <!--<span class="playlistsongname">歌曲名字</span>-->
+                         <!--<span class="playlistsingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div>22.4</div>-->
+                 <!--</li>-->
+                 <!--<li class="playlistlist_ul_li1 clearfix">-->
+                     <!--<div>1</div>-->
+                     <!--<div class="playlistlistname">-->
+                         <!--<span class="playlistsongname">歌曲名字</span>-->
+                         <!--<span class="playlistsingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div>22.4</div>-->
+                 <!--</li><li class="playlistlist_ul_li1 clearfix">-->
+                 <!--<div>1</div>-->
+                 <!--<div class="playlistlistname">-->
+                     <!--<span class="playlistsongname">歌曲名字</span>-->
+                     <!--<span class="playlistsingername">歌手名字</span>-->
+                 <!--</div>-->
+                 <!--<div>22.4</div>-->
+             <!--</li><li class="playlistlist_ul_li1 clearfix">-->
+                 <!--<div>1</div>-->
+                 <!--<div class="playlistlistname">-->
+                     <!--<span class="playlistsongname">歌曲名字</span>-->
+                     <!--<span class="playlistsingername">歌手名字</span>-->
+                 <!--</div>-->
+                 <!--<div>22.4</div>-->
+             <!--</li>-->
+             </ul>
+         </footer>
+     </div>
+   <!--屏三 file-->
+     <div class="filewrap">
+         <header class="fileheader">
+             <nav class="fileheader_nav clearfix">
+                 <a href="javascript:;" class="filemenu"></a>
+                 <a href="javascript:;">Music</a>
+                 <a href="javascript:;" class="filesearch"></a>
+             </nav>
+         </header>
+         <section class="filesection">
+             <!--移动端对img的支持比对background-iamge的支持更好-->
+             <img src="img/file_person_03.png" class="filepicture" >
+             <ul class="filechecklist">
+                 <li class="fileleft_cicle"></li>
+                 <li class="filelistplay">播放列表</li>
+                 <li class="fileright_cicle"></li>
+                 <div class="filemore">更多信息</div>
+             </ul>
+         </section>
+         <footer class="filelist">
+             <ul class="filelist_ul">
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>1</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li>-->
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>2</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li>-->
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>3</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li>-->
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>4</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li><li class="filelist_ul_li1 clearfix">-->
+                 <!--<div>5</div>-->
+                 <!--<div class="filelistname">-->
+                     <!--<span class="filesongname">歌曲名字</span>-->
+                     <!--<span class="filesingername">歌手名字</span>-->
+                 <!--</div>-->
+                 <!--<div class="fileplay"></div>-->
+                 <!--</li><li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>6</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li>-->
+
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>1</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li>-->
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>2</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li>-->
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>3</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li>-->
+                 <!--<li class="filelist_ul_li1 clearfix">-->
+                     <!--<div>4</div>-->
+                     <!--<div class="filelistname">-->
+                         <!--<span class="filesongname">歌曲名字</span>-->
+                         <!--<span class="filesingername">歌手名字</span>-->
+                     <!--</div>-->
+                     <!--<div class="fileplay"></div>-->
+                 <!--</li><li class="filelist_ul_li1 clearfix">-->
+                 <!--<div>5</div>-->
+                 <!--<div class="filelistname">-->
+                     <!--<span class="filesongname">歌曲名字</span>-->
+                     <!--<span class="filesingername">歌手名字</span>-->
+                 <!--</div>-->
+                 <!--<div class="fileplay"></div>-->
+             <!--</li><li class="filelist_ul_li1 clearfix">-->
+                 <!--<div>6</div>-->
+                 <!--<div class="filelistname">-->
+                     <!--<span class="filesongname">歌曲名字</span>-->
+                     <!--<span class="filesingername">歌手名字</span>-->
+                 <!--</div>-->
+                 <!--<div class="fileplay"></div>-->
+             <!--</li>-->
+             </ul>
+
+         </footer>
+     </div>
+     <!--<audio src="img/李健%20-%20贝加尔湖畔.mp3"></audio>-->
+
+     <!--<script src="js/event.js"></script>-->
+     <!--<script src="js/touch.js"></script>-->
+     <!--<script src="js/zepto.min.js"></script>-->
+    <script src="js/function.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

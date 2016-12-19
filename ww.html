@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true" />
+    <!--引用flexible后不用再写该行代码-->
+    <!--<meta name="viewport" content="width=device-width,user-scalable=no">-->
+    <title>musicPhone</title>
+    <link rel="stylesheet" type="text/css" href="css/newindex.css"/>
+    <script src="lib-flexible-master/build/flexible_css.debug.js"></script>
+    <script src="lib-flexible-master/build/flexible.debug.js"></script>
+
+    <!--zepto.js要放在前面-->
+    <script src="js/zepto.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/touch.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript">
+        //alert(document.documentElement.clientHeight);
+        document.body.style.height = document.documentElement.clientHeight + "px";
+    </script>
+    <!--<div class="startwrap">-->
+    <!--<div class="startleft"></div>-->
+    <!--<div class="startright"></div>-->
+    <!--</div>-->
+<!--屏一index-->
+<div class="indexwrap">
+    <header class="indexheader">
+        <nav class="indexheader_nav clearfix">
+            <a href="javascript:;" class="indexmenu"></a>
+            <a href="javascript:;" class="nameM">Music</a>
+            <a href="javascript:;" class="indexsearch"></a>
+        </nav>
+    </header>
+    <section class="indexsection">
+        <div class="indexsection_div">
+        <!--移动端对img的支持比对background-iamge的支持更好-->
+            <img src="img/Coeluso_app-new-beifen_03.jpg" class="indexpicture" >
+            <ul class="indexsection_ul clearfix">
+                <li class="indexsection_ul_li1"></li>
+                <li class="indexsection_ul_li2">
+                    <span class="datalistName"></span>
+                    <span class="datalistPerson"></span>
+                </li>
+                <li class="indexsection_ul_li3"></li>
+            </ul>
+            <!--歌词显示部分-->
+            <div class="wrap_citelist">
+                <ul class="citelist">
+                    <!--<li23></li23>-->
+                    <!--<li>3</li>-->
+                    <!--<li>34</li>-->
+                    <!--<li>434</li>-->
+                    <!--<li>23</li>-->
+                </ul>
+            </div>
+
+            <div class="indexmusic_time clearfix">
+                <span class="indexpretime">00.00</span>
+                <span class="indextotaltime">00.00</span>
+            </div>
+            <div class="indexprocess">
+                <div class="indexcurrent_process"></div>
+                <!--弹窗-->
+                <div class="indexl_menu">
+                    <div class="indexvolum clearfix">
+                        <img src="img/1-0.png" class="indexvolumone">
+                        <div class="indexvolum_process">
+                            <div class="indexcurrentvolum_process"></div>
+                            <div class="indexdot"></div>
+                        </div>
+                        <img  src="img/2-0.png" class="indexvolumtwo">
+                    </div>
+                    <div class="indexnone clearfix">
+                        <div class="indexnonediv">
+                            <img src="img/enjoin.png" class="indexenjoin">
+                            <span>分享至</span>
+                        </div>
+                        <div class="indexnonediv2">
+                            <img src="img/music.png" class="indexnonemusic">
+                            <span>我的音乐</span>
+                        </div>
+                    </div>
+                    <div class="indexclose"> 关闭</div>
+                </div>
+                <!--弹窗结束-->
+            </div>
+        </div>
+    </section>
+    <footer class="indexcontrol">
+        <ul class="indexcontrol_ul">
+            <li class="indexcontrol_ul_li1"></li>
+            <li class="indexcontrol_ul_li2"></li>
+            <li class="indexcontrol_ul_li3"></li>
+            <!--<li class="indexcontrol_ul_li3_"></li>-->
+            <li class="indexcontrol_ul_li4"></li>
+            <li class="indexcontrol_ul_li5"></li>
+        </ul>
+    </footer>
+</div>
+
+<!--<audio src="img/李健%20-%20贝加尔湖畔.mp3"></audio>-->
+
+<!--<script src="js/event.js"></script>-->
+<!--<script src="js/touch.js"></script>-->
+<!--<script src="js/zepto.min.js"></script>-->
+<script src="js/function.js"></script>
+<script src="js/index.js"></script>
+<script src="js/data.js"></script>
+
+</body>
+</html>

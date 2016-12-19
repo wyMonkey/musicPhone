@@ -1,0 +1,26 @@
+项目问题：
+1.tap使用zepto.js事件冒泡，用touchstar使劲啊代替，还有background-size，和img的宽高一定要设置
+2.移动端高度的设计
+  两种方案：（1）从body开始，body高度100%，子级类推全部使用百分比设置高度
+           （2）设计纸分成三块，section中的div及其内容高度全部按照设计纸的像素乘以iphone4的像素比设置，
+                 <header></header>
+                 <section>
+                       <div><div>
+                 </section>
+                 <footer></footer
+3.开服务器server，用iphone的UC访问，cmd中报人favicon.icon NotFound的问题，查找的资料如下：
+  在WEB服务器总是经常看到"GET /favicon.ico HTTP/1.1" 404 288 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon)"，以前一直没有在意，以为是网页做的不好，修改别人的网页导致某处留下了这个图片的调用。
+      今天在google搜索一下，才发现这个favicon.ico的妙处，哈哈。原来IE在将网站加入收藏夹的时候自动会搜寻网站下的 /favicon.ico 文件（如果在网页上没有特别指明），这也就是我们常常说的收藏夹的图标文件。
+      更有意思的是，我们根据这个也可以统计有多少人将我们的网站加入了收藏夹，呵呵，确实不错。
+      具体请看
+  What is Favicon.ico? Personalise Your Site's Bookmark
+  http://www.thesitewizard.com/archive/favicon.shtml
+      一些免费软件来制作你的 favicon.ico：
+  Free Windows Resource Editors, Resource Compilers, Resource Hackers, Icon Editors
+  http://www.thefreecountry.com/programming/resourceeditors.shtml
+
+      我马上用photoshop做了一个小图片，通过 http://www.html-kit.com/favicon/ 这个网站转换为favicon.ico，放到WEB服务器的根目录，效果不错：）
+
+4.border-radious对于安卓机器无效
+5.向办法让设计给3:2的设计稿子，就是iphone4 320:480的比例，写的时候忽略手机浏览器的自带的头和尾部
+6.注意：浏览器的font-size如果小于12px就显示不出效果了
