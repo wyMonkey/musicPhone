@@ -1,0 +1,189 @@
+@import "../sass/mixin";
+@import "../sass/reset";
+.playlistheader{
+  height:size(182);
+}
+.playlistwrap{
+  width:10rem;
+  height:100%;
+  background-image: url("../img/playlist_bg.jpg");
+  background-size:10rem 100%;
+}
+.playlistheader_nav{
+  width:10rem;
+  height:size(102);
+  //height:size(46);
+  padding-top:size(80);
+  //padding-bottom:size(34);
+  //padding-bottom:size(43);
+}
+.playlistheader_nav a{
+  //display: inline-block;
+  float: left;
+  color:#fff;
+}
+.playlistheader_nav a:nth-of-type(1){
+  width:size(50);
+  height:size(46);
+  margin-left:size(36);
+  background:url("../img/sprit.png") no-repeat size(-417) size(0);
+}
+.playlistheader_nav a:nth-of-type(2){
+  width:size(580);
+  height:size(102);
+  color:#fff;
+  text-align: center;
+  line-height: size(46);
+
+}
+.playlistplaylist_a span{
+  height:size(51);
+  display:block;
+  text-align: center;
+}
+.playlist_a span:nth-of-type(1){
+  @include data-dpr("font-size",18);
+}
+.playlist_a span:nth-of-type(2){
+  @include data-dpr("font-size",10);
+}
+.playlistheader_nav a:nth-of-type(3){
+  width:size(46);
+  height:size(46);
+  margin-right:size(36);
+  background: url("../img/sprit.png") no-repeat size(-500) 0;
+}
+.playlistsection{
+  height:size(148);
+}
+.playlistsection_ul{
+  height:size(66);
+  padding-top:size(34);
+  padding-bottom: size(34);
+}
+.playlistsection_ul li{
+  float:left;
+}
+.playlistsection_ul_li1{
+  width:size(50);
+  height:size(22);
+  //border:size(1) solid transparent;
+  margin-left:size(35);
+  margin-top:size(20);
+  margin-bottom:size(20);
+  margin-right:size(70);
+  color:#fff;
+  //background: url("../img/sprit.png") no-repeat size(-336) size(-54);
+}
+.playlistsection_ul_li2{
+  width:size(40);
+  height:size(30);
+  margin-top:size(16);
+  margin-bottom:size(16);
+  margin-right:size(26);
+  background: url("../img/sprit.png") no-repeat size(-336) size(-106);
+  //width:size(566);
+  //height:size(112);
+}
+.playlistsection_ul_li3{
+  width:size(66);
+  height:size(66);
+  margin-left:size(19);
+  margin-right:size(19);
+  background: url("../img/sprit.png") no-repeat size(-204) size(-74);
+}
+.playlistsection_ul_li4{
+  width:size(66);
+  height:size(66);
+  margin-left:size(19);
+  margin-right:size(19);
+  background: url("../img/sprit.png") no-repeat size(-202) size(-164);
+  //background-size: size(66) size(66);
+}
+.playlistsection_ul_li5{
+  width:size(66);
+  height:size(66);
+  margin-left:size(19);
+  margin-right:size(19);
+  background: url("../img/sprit.png") no-repeat size(-204) size(0);
+}
+.playlistsection_ul_li6{
+  width:size(30);
+  height:size(30);
+  margin-top:size(17);
+  margin-bottom:size(17);
+  margin-left:size(19);
+  margin-right:size(19);
+  background: url("../img/sprit.png") no-repeat size(-336) size(0);
+}
+.playlistsection_ul_li7{
+  width:size(50);
+  height:size(22);
+  margin-left:size(40);
+  margin-top:size(20);
+  margin-bottom:size(20);
+  margin-right:size(35);
+  color:#fff;
+}
+.playlistprocess {
+  height:size(10);
+  position: relative;
+  background-color:#031a39;
+  margin-bottom:size(128);
+}
+.playlistcurrent_process{
+  height:size(10);
+  position: absolute;
+  top:0;
+  left:0;
+  background-color:#ff3334;
+}
+.playlistlist{
+  height:size(1000);
+}
+.playlistlist li{
+  height:size(60);
+  width:size(678);
+  padding-top:size(30);
+  padding-bottom:size(30);
+  padding-left:size(34);
+  padding-right:size(34);
+  border-bottom:size(2) solid #142950;
+}
+.playlistlist_ul_li1 div{
+  float: left;
+  height:size(60);
+}
+.playlistlist_ul_li1 div:nth-of-type(1){
+  width:size(58);
+  heigth:size(60);
+  line-height: size(60);
+  @include data-dpr("font-size",12);
+  color:#193d6e;
+}
+.playlistlist_ul_li1 div:nth-of-type(2){
+  width:size(570);
+  height:size(60);
+}
+.playlistlistname span{
+  display: block;
+}
+.playlistsongname{
+  height:size(30);
+  @include data-dpr("font-size",12);
+  line-height: size(30);
+  color:#2a5ea4;
+}
+.playlistsingername{
+  height:size(30);
+  @include data-dpr("font-size",12);
+  line-height: size(30);
+  color:#ffffff;
+}
+.playlistlist_ul_li1 div:nth-of-type(3){
+  width:size(48);
+  height:size(60);
+  line-height: size(60);
+  @include data-dpr("font-size",12);
+  color:#ffffff;
+}
